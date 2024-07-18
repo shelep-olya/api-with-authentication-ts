@@ -1,7 +1,9 @@
 import express from 'express';
 
-import {signUp } from "../controllers/authentication";
+import {login, signUp } from "../controllers/authentication";
+
 
 export default(router: express.Router) => {
-    router.post('/auth/signUp', signUp);
+    router.post('/auth/signup', signUp);
+    router.post("/auth/login", login);
 }

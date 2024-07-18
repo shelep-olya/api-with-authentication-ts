@@ -6,7 +6,8 @@ import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import router from 'router';
+import router from './router/index';
+import { User } from 'db/users';
 
 dotenv.config({path: "./config.env"});
 
